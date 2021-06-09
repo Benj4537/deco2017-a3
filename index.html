@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="phone-header">
+        <img src="imgs/LOGO.png" alt="" width="60">
+    </div>
+    <img class="photo" src="imgs/man.png" alt="">
+    <div class="sidebar">
+        <div class="sidebar-item sidebar-play">
+            <img src="imgs/MUSIC_BUTTOM.png" alt="">
+        </div>
+        <div class="sidebar-item selected sidebar-task">
+            <img src="imgs/TASK_LIST.png" alt="">
+        </div>
+        <div class="sidebar-item sidebar-timer">
+            <img src="imgs/TIMER.png" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-task show">
+            <h1 class="text-center h1">Task Overview</h1>
+            <div class="calendar">
+                <h2 class="h2">Calendar
+                    <button class="btn btn-add-act">Add New Activity</button>
+                </h2>
+                <div class="calendar-list">
+                    <div class="item">
+                        <div class="title">Anthropology Quiz</div>
+                        <div class="sub-title">:The week 2 In-class quiz</div>
+                    </div>
+                    <div class="item">
+                        <div class="title">Anthropology Quiz</div>
+                        <div class="sub-title">:The week 2 In-class quiz</div>
+                    </div>
+                </div>
+                <div class="calendar-month">
+                    <i class="i1">Apr</i>
+                    <i class="i2">May</i>
+                    <i class="i3">Jun</i>
+                </div>
+<!--                <div class="calendar-details">-->
+<!--                    <img src="imgs/INDICATOR.png" alt="" width="30">-->
+<!--                    <div class="details-dates b">2021/Apr/12</div>-->
+<!--                    <div class="line"></div>-->
+<!--                    <div class="details-remarks">-->
+<!--                        This quiz is an oberview xxx of xxxx, covers xxxx , student will have permision access to book-->
+<!--                        and online mate rials ...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed-->
+<!--                        diomnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat-->
+<!--                    </div>-->
+<!--                    <div class="members">-->
+<!--                        <span>Jack OU</span>-->
+<!--                        <span>Amanda</span>-->
+<!--                        <span>Benj Deng</span>-->
+<!--                        <span>Lancer</span>-->
+<!--                    </div>-->
+<!--                    <div class="flex">-->
+<!--                        <div class="flex-left">-->
+<!--                            <div>-->
+<!--                                <div class="name">Coordinator's information</div>-->
+<!--                                <div class="contact">Contact: xxxuni@teacher132.com</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="flex-right">-->
+<!--                            <div class="place">Place: School Buiding A</div>-->
+<!--                            <div class="room">Room: Multimedia Room 101</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="my-task">
+                <h2 class="h2 bg-white">My Task</h2>
+                <div class="task-content">
+                    <div class="task-1">
+                        <h3 class="h3">Current task</h3>
+                        <div class="flex">
+                            <div class="item">
+                                <div class="title b">Design 0000</div>
+                                <div class="sub-title">:Assessment 2 Mock u-</div>
+                            </div>
+                            <div class="item item-square" taskid="0">
+                                Des
+                            </div>
+                            <div class="item">
+                                <p>Estimated Completing Time</p>
+                                <p class="estTime">3 Hours / 17 Mins</p>
+                                <p>Current Time Spent</p>
+                                <p>1 Hours / 4 Mins</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-2">
+                        <h3 class="h3">Waiting To Do</h3>
+                        <div class="grid">
+                            <div class="item">
+                                <div class="title">Easy to do</div>
+                                <div class="item-square">Soci</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">Waiting feedback</div>
+                                <div class="item-square">101</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">Need more time</div>
+                                <div class="item-square">Mu</div>
+                            </div>
+                            <div class="add">
+                                <img src="imgs/ADD.png" alt="" width="60">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-timer">
+            <div class="timer-content">
+                <div class="reset"><b>Reset</b></div>
+                <div class="watch">
+                    <div class="watch-time">
+                        <span class="num watch-min">30</span>
+                        <span>min</span>
+                        <span class="num watch-sec">5</span>
+                        <span>seconds</span>
+                    </div>
+                    <div class="watch-btns">
+                        <div class="btn-setting">Setting</div>
+                        <img class="btn-pause" src="imgs/timer-play.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        <div class="music">-->
+<!--            <div class="music-progress"></div>-->
+<!--            <div class="grid">-->
+<!--                <img class="music-prev" src="imgs/PREVIOUS.png" alt="" width="20">-->
+<!--                <img class="music-play" src="imgs/PAUSE.png" alt="" width="50">-->
+<!--                <img class="music-next" src="imgs/NEXT.png" alt="" width="20">-->
+<!--            </div>-->
+<!--            <audio src="#" id="music"></audio>-->
+<!--        </div>-->
+    </div>
+
+
+<!--    <div class="modal modal-calendar">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-head">-->
+<!--                <label for="">Title</label>-->
+<!--                <input type="text" name="title">-->
+<!--                <label for="">:Sube-title</label>-->
+<!--                <input type="text" name="subeTitle">-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <div class="modal-body-date">-->
+<!--                    <span>Date of Event:</span>-->
+<!--                    <span>-->
+<!--                        <label>YY</label>-->
+<!--                        <input type="text" name="Y">-->
+<!--                    </span>-->
+<!--                    <span>-->
+<!--                        <label>MM</label>-->
+<!--                        <input type="text" name="M">-->
+<!--                    </span>-->
+<!--                    <span>-->
+<!--                        <label>DD</label>-->
+<!--                        <input type="text" name="D">-->
+<!--                    </span>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label>Select a course:</label>-->
+<!--                    <select name="course" id="">-->
+<!--                        <option value="0">James Lee</option>-->
+<!--                        <option value="1">Charles Aarn</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label>Place:</label>-->
+<!--                    <input type="text" name="place">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <span>Add Members:</span><br>-->
+<!--                    <div class="modal-members">-->
+<!--&lt;!&ndash;                        <input type="checkbox" name="member" value=""><label>Jack OU</label><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="checkbox" name="member" value=""><label>Amanda</label><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <input type="checkbox" name="member" value=""><label>Benj Deng</label><br>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <img class="add-member" src="imgs/ADD.png" alt="">-->
+<!--                    <input type="text" class="input-add-member">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <div>Content:</div>-->
+<!--                    <textarea name="content" cols="40" rows="5"></textarea>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="text-center">-->
+<!--                <button class="modal-btn">Add</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+
+<!--    <div class="modal modal-add-task">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="flex">-->
+<!--                <div class="square">-->
+<!--                    <input type="text" name="brief">-->
+<!--                </div>-->
+<!--                <div class="grid">-->
+<!--                    <label for="">Title</label>-->
+<!--                    <input type="text" name="title">-->
+<!--                    <label for="">Sube-title</label>-->
+<!--                    <input type="text" name="subTitle">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h3>Priority</h3>-->
+<!--                <input type="radio" name="priority" value="0">-->
+<!--                <label for="">DO IT NOW</label>-->
+<!--                <input type="radio" name="priority" value="1" checked>-->
+<!--                <label for="">Add to Task List</label>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h3>Content</h3>-->
+<!--                <div class="modal-add-task-content">-->
+<!--                    <input type="checkbox" name="content" value=""><label for="">1`11</label>-->
+<!--                    <input type="checkbox" name="content" value=""><label for="">1`11</label>-->
+<!--                    <input type="checkbox" name="content" value=""><label for="">1`11</label>-->
+<!--                    <img class="add-task-content" src="imgs/ADD.png" alt="">-->
+<!--                    <input type="text" class="input-add-member">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h3>Estimated Completing Time</h3>-->
+<!--                <div class="estTime">-->
+<!--                    <label for="">YY</label>-->
+<!--                    <input type="text" name="Y">-->
+<!--                    <label for="">MM</label>-->
+<!--                    <input type="text" name="M">-->
+<!--                    <label for="">DD</label>-->
+<!--                    <input type="text" name="D">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            -->
+<!--            <div class="btns">-->
+<!--                <img class="btn-cancel" src="imgs/CANCLE.png" alt="">-->
+<!--                <img class="btn-confirm" src="imgs/COMFIRM.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+<!--    <div class="modal modal-timer">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-timer-content">-->
+<!--                <div>-->
+<!--                    <input type="number" name="h" value="0">-->
+<!--                    Hour-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <input type="number" name="m" max="59" value="30">-->
+<!--                    Mins-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <input type="number" name="s" max="59" value="5">-->
+<!--                    Second-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="btns">-->
+<!--                <div class="btn-remove"></div>-->
+<!--                <div class="btn-start b">Start</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--    <div class="modal modal-edit-task">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="flex">-->
+<!--                <div class="square">-->
+<!--                    brief-->
+<!--                </div>-->
+<!--                <div class="grid">-->
+<!--                    <p>Title</p>-->
+<!--                    <p>Sube-title</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h3>Priority</h3>-->
+<!--                <input type="radio" name="priority" value="0">-->
+<!--                <label for="">DO IT NOW</label>-->
+<!--                <input type="radio" name="priority" value="1" checked>-->
+<!--                <label for="">Add to Task List</label>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h3>Content</h3>-->
+<!--                <div class="modal-edit-task-content">-->
+<!--                    <input type="checkbox" name="content" value=""><label for="">1`11</label>-->
+<!--                    <input type="checkbox" name="content" value=""><label for="">1`11</label>-->
+<!--                    <input type="checkbox" name="content" value=""><label for="">1`11</label>-->
+<!--                    <img class="add-task-content" src="imgs/ADD.png" alt="">-->
+<!--                    <input type="text" class="input-add-member">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h3>Estimated Completing Time</h3>-->
+<!--                <div class="estTime">-->
+<!--                    <label for="">YY</label>-->
+<!--                    <input type="text" name="Y">-->
+<!--                    <label for="">MM</label>-->
+<!--                    <input type="text" name="M">-->
+<!--                    <label for="">DD</label>-->
+<!--                    <input type="text" name="D">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="progress">-->
+<!--                <div class="progress-bar"></div>-->
+<!--            </div>-->
+
+<!--            <div class="btns">-->
+<!--                <img class="btn-cancel" src="imgs/CANCLE.png" alt="">-->
+<!--                <img class="btn-confirm" src="imgs/COMFIRM.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+
+
+<script src="js/main.js"></script>
+<script src="js/task.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/music.js"></script>
+
+</body>
+</html>
